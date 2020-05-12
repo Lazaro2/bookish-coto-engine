@@ -4,7 +4,7 @@
 }
      body{
 		 background-color:#f7f7f7; 
-		 background-image: url(\Penguins.jpg);   
+		 background-image: url();   
          background-position: 80% 60%; 		 
          font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
          font-size:medium;
@@ -58,7 +58,7 @@ p {
  
 #conteudo form input[type="email"],#conteudo form input[type="text"], #conteudo form input[type="password"] {
      float:center;  
-     background-color:yellow;
+     background-color:slateBlue;
      text-indent:10px;
      width:150px;
      height:25px;
