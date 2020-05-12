@@ -1,7 +1,3 @@
 <?php
-     $servidor = "localhost";
-     $usuario = "root";
-     $senha = "";
-     $banco = "empresax";
-     $conecta = mysqli_connect($servidor, $usuario, $senha, $banco);
+    $mysqli = new mysqli("mysql000.umbler.com", "usuario", "senha", "database");
 ?>
