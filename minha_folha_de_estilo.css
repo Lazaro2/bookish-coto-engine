@@ -58,7 +58,7 @@ p {
  
 #conteudo form input[type="email"],#conteudo form input[type="text"], #conteudo form input[type="password"] {
      float:center;  
-     background-color:slateBlue;
+     background-color:gray;
      text-indent:10px;
      width:150px;
      height:25px;
