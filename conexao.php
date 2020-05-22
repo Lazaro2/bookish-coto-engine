@@ -3,5 +3,5 @@
      $usuario = "alunos";
      $senha = "";
      $banco = "escolae";
-     $conecta = new mysqli_connect($servidor, $usuario, $senha, $banco);
+     $conn = new mysqli_connect($servidor, $usuario, $senha, $banco);
 ?>
