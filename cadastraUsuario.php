@@ -26,7 +26,7 @@
                          return md5($criptoSenha);
                     } 
                     $criptoSenha = criptoSenha($filtraSenha);
-                    $consultaBanco = mysqli_query($conecta, "SELECT * FROM tblusuario WHERE email_tblusuario = '$recebeEmail'") or die (mysql_error());
+                    $consultaBanco = mysqli_query($conn, "SELECT * FROM tblusuario WHERE email_tblusuario = '$recebeEmail'") or die (mysql_error());
                     $verificaBanco = mysqli_num_rows($consultaBanco);
                     if($verificaBanco == 1){
                          echo "<p>Prezado(a) <strong>$recebeNome</strong>, o endereço de e-mail informado (<strong><em>$recebeEmail</em></strong>) já consta em nossa base de dados!</p>";
@@ -34,7 +34,7 @@
                          return false;
                     }
                     else {
-                         $insereDados = mysqli_query($conecta, "INSERT INTO tblusuario (nome_tblusuario, email_tblusuario, senha_tblusuario) VALUES ('$filtraNome', '$filtraEmail', '$criptoSenha')") or die (mysql_error());
+                         $insereDados = mysqli_query($conn, "INSERT INTO tblusuario (nome_tblusuario, email_tblusuario, senha_tblusuario) VALUES ('$filtraNome', '$filtraEmail', '$criptoSenha')") or die (mysql_error());
                          echo "<p>Seu cadastro foi efetuado com sucesso!</p>";
                      header("Location: index.php"); 
                     }
