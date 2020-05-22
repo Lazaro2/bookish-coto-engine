@@ -23,7 +23,7 @@
                              return md5($criptoSenha);
                         }
                         $criptoSenha = criptoSenha($filtraSenha);
-                        $consultaInformacoes = mysqli_query($conecta, "SELECT * FROM tblusuario WHERE email_tblusuario = '$filtraEmail' AND senha_tblusuario = '$criptoSenha'") or die (mysql_error());
+                        $consultaInformacoes = mysqli_query($conn, "SELECT * FROM tblusuario WHERE email_tblusuario = '$filtraEmail' AND senha_tblusuario = '$criptoSenha'") or die (mysql_error());
                         $verificaInformacoes = mysqli_num_rows($consultaInformacoes);
                         if($verificaInformacoes == 1){
                              while ($result=mysqli_fetch_array($consultaInformacoes)){
