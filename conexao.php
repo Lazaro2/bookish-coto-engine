@@ -1,7 +1,7 @@
 <?php
-     $servidor = "mysql669.umbler.com";
+     $servidor = "mysql669.umbler.com:41890";
      $usuario = "alunos";
      $senha = "";
      $banco = "escolae";
-     $conecta = mysqli_connect($servidor, $usuario, $senha, $banco);
+     $conecta = new mysqli_connect($servidor, $usuario, $senha, $banco);
 ?>
